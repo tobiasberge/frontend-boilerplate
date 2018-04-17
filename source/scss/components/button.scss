@@ -1,0 +1,19 @@
+$button-border-thickness: 1px;
+
+.button {
+  font-family: $font-family-primary;
+  font-size: $font-size-default;
+  background-color: $color-light-gray;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-default;
+  display: inline-block;
+  padding: 2px 20px;
+  line-height: 36px;
+  outline: none;
+
+  &.button--primary {
+    background: $color-primary;
+    color: $color-white;
+    line-height: 36px - ($button-border-thickness * 2);
+  }
+}
